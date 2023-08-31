@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    ".NETCoreApp,Version=v3.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0": []
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "C:\\Users\\neryu\\.nuget\\packages\\": {}
@@ -13,26 +13,26 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\neryu\\source\\repos\\fundamentos-c-sharp-balta-io\\Teste\\Teste.csproj",
-      "projectName": "Teste",
-      "projectPath": "C:\\Users\\neryu\\source\\repos\\fundamentos-c-sharp-balta-io\\Teste\\Teste.csproj",
+      "projectUniqueName": "C:\\Users\\neryu\\source\\repos\\fundamentos-c-sharp-balta-io\\MeuApp\\MeuApp.csproj",
+      "projectName": "MeuApp",
+      "projectPath": "C:\\Users\\neryu\\source\\repos\\fundamentos-c-sharp-balta-io\\MeuApp\\MeuApp.csproj",
       "packagesPath": "C:\\Users\\neryu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\neryu\\source\\repos\\fundamentos-c-sharp-balta-io\\Teste\\obj\\",
+      "outputPath": "C:\\Users\\neryu\\source\\repos\\fundamentos-c-sharp-balta-io\\MeuApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\neryu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -43,8 +43,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
