@@ -425,3 +425,27 @@ int inteiro = Convert.ToInt32("100")
 ```
 
 ---
+
+### Operadores Aritméticos
+
+- Multiplicação e divisão são executadas primeiro
+- Aceita `short`, `int`, `float`, `double` e `decimal`
+- Em tipos inteiros, valores decimais são arredondados
+
+### Operadores de Atribuição
+
+- Podemos utilizar junto ao operador aritmético
+- `x += 5` equivale a `x = x + 5`
+- `x -= 5` equivale a `x = x - 5`
+- `x *= 5` equivale a `x = x * 5`
+- `x /= 5` equivale a `x = x / 5`
+
+### Operadores de comparação
+
+- Comparação entre valores que retorna `True` ou `False`
+- `==` ~ Igual
+- `!=` ~ Diferente
+- `>` ~ Maior que
+- `<` ~ Menor que
+- `>=` ~ Maior ou igual a
+- `<=` ~ Menor ou igual a
