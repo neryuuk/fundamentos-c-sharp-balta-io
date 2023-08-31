@@ -327,7 +327,7 @@ decimal preco = 1923.75M; // Notação M
 
 #### Boolean
 
-- Armazena `True` ou `False`
+- Armazena `true` ou `false`
 - `bool` ~ 8-bit
 
 #### Char
@@ -373,7 +373,7 @@ int? idade = null; // '?' marca como Nullable Type
   - `int` ~ `0`
   - `float` ~ `0`
   - `decimal` ~ `0`
-  - `bool` ~ `False`
+  - `bool` ~ `false`
   - `char` ~ `'\0'`
   - `string` ~ `""`
 
@@ -442,10 +442,18 @@ int inteiro = Convert.ToInt32("100")
 
 ### Operadores de comparação
 
-- Comparação entre valores que retorna `True` ou `False`
+- Comparação entre valores que retorna `true` ou `false`
 - `==` ~ Igual
 - `!=` ~ Diferente
 - `>` ~ Maior que
 - `<` ~ Menor que
 - `>=` ~ Maior ou igual a
 - `<=` ~ Menor ou igual a
+
+### Operadores Lógicos
+
+- Usados para operações condicionais
+- Sempre retornam `true` ou `false`
+- E ~ and ~ `&&`
+- OU ~ or ~ `||`
+- NEGAÇÃO ~ not ~ `!`
