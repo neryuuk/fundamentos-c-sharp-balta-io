@@ -174,11 +174,12 @@
     - `dotnet new mstest`
 
 ```PowerShell
-dotnet new console -o MeuApp
+dotnet new console --framework "netcoreapp3.1" -o MeuApp
 ```
 
+> - `--framework "netcoreapp3.1"` ~ Define o framework a ser utilizado no projeto em questão
 > - `-o MeuApp` ~ Cria na pasta MeuApp ao inves de criar na pasta local
-
+> - https://learn.microsoft.com/en-us/dotnet/standard/net-standard
 ### Fluxo de execução
 
 ```PowerShell
@@ -214,3 +215,8 @@ dotnet run
   - `dotnet run --environment=development`
   - `dotnet run --environment=production`
   - O `run` não executa depuração (debug)
+
+### Estrutura do Console App
+
+- `.csproj` ~ XML de definição do projeto
+- `Program.cs` ~ Porta de entrada da aplicação
