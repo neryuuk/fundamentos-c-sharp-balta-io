@@ -1,13 +1,13 @@
 # Fundamentos do C#
 
 ## C#
+
 ### Definições
 
 - Linguagem
   - Tipada (Fortemente)
   - Compilada
   - Gerenciada
-
 - Por que?
   - Completa
   - Madura
@@ -60,7 +60,7 @@
 
 ### .NET Framework
 
-- Versões `1.0`, `1.1`, `2.0`, `3.0`, `3.5`, `4.x` (mais recente)
+- Versões `1.0`, `1.1`, `2.0`, `3.0`, `3.5`, `4.x` (mais 'recente')
 - Pode ser instalado _side-by-side_
 - Windows only
 - Legado
@@ -132,7 +132,6 @@
     - WPF, WinForms para Desktop
     - .NET Core para console / batch / serviço
   - Usado apenas para distribuição
-
 - SDK ~ _Software Development Kip_
   - Possui as ferramentas para desenvolvimento das aplicações
   - Possui runtime integrado
@@ -180,11 +179,13 @@ dotnet new console --framework "netcoreapp3.1" -o MeuApp
 > - `--framework "netcoreapp3.1"` ~ Define o framework a ser utilizado no projeto em questão
 > - `-o MeuApp` ~ Cria na pasta MeuApp ao inves de criar na pasta local
 > - https://learn.microsoft.com/en-us/dotnet/standard/net-standard
+
 ### Fluxo de execução
 
 ```PowerShell
 dotnet restore
 ```
+
 > - `dotnet restore` ~ Valida e instala as dependências adicionais com base no `.csproj`
 
 ---
@@ -192,6 +193,7 @@ dotnet restore
 ```PowerShell
 dotnet build
 ```
+
 > - `dotnet build` ~ Compila a aplicação
 
 ---
@@ -199,6 +201,7 @@ dotnet build
 ```PowerShell
 dotnet clean
 ```
+
 > - `dotnet clean` ~ Limpa o cache da aplicação
 
 ---
@@ -206,6 +209,7 @@ dotnet clean
 ```PowerShell
 dotnet run
 ```
+
 > - `dotnet run` ~ Executa a aplicação
 
 ### Variáveis de ambiente
@@ -282,11 +286,11 @@ dotnet run
   - Tipos Nulos ~ _Nullable Types_
 - Cada tipo primitivo possui uma capacidade
 
-### System
+#### System
 
 - No `.NET`, todos os tipos derivam do `System`
 
-### Byte
+#### Byte
 
 - Usado para representar um byte de fato
   - 8-bit ~ `0` à `255`
@@ -295,7 +299,7 @@ dotnet run
   - Permite valores negativos
   - 8-bit ~ `-128` à `127`
 
-### Números inteiros
+#### Números inteiros
 
 - short ~ `16-bit`
   - ushort ~ `unsigned short`
@@ -304,7 +308,7 @@ dotnet run
 - long ~ `64-bit`
   - ulong ~ `unsigned long`
 
-### Números reais
+#### Números reais
 
 - float ~ Notação F
   - 32-bit
@@ -312,8 +316,6 @@ dotnet run
   - 64-bit
 - decimal ~ Notação M
   - 128-bit
-
----
 
 ```csharp
 float salario = 2500.25F; // Notação F
@@ -323,18 +325,18 @@ decimal preco = 1923.75M; // Notação M
 
 ---
 
-### Boolean
+#### Boolean
 
 - Armazena `True` ou `False`
 - `bool` ~ 8-bit
 
-### Char
+#### Char
 
 - Armazena um caractere `unicode`
 - Definido com 'aspas simples'
 - `char` ~ 16-bit
 
-### String
+#### String
 
 - Cadeia / lista de caracteres
 - Definido com "aspas duplas"
