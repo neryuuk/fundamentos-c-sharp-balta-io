@@ -341,3 +341,87 @@ decimal preco = 1923.75M; // Notação M
 - Cadeia / lista de caracteres
 - Definido com "aspas duplas"
 - string ~ Tamanho alocado depende do conteúdo
+
+#### Var
+
+- Wildcard que assume o tipo do primeiro valor atribuído à variável
+
+#### Object
+
+- Tipo genérico que recebe qualquer valor
+
+#### Nullable Types
+
+- Todo tipo pode receber o valor `null`
+- Devem ser marcados como `Nullable Type`
+
+```csharp
+int? idade = null; // '?' marca como Nullable Type
+```
+
+---
+
+### Alias
+
+- Apelido que todo tipo no `.NET` tem
+- `System.String` tem o alias `string`
+- `System.Int32` tem o alias `int`
+
+### Valores Padrão
+
+- Tipos built-in sempre tem valor padrão
+  - `int` ~ `0`
+  - `float` ~ `0`
+  - `decimal` ~ `0`
+  - `bool` ~ `False`
+  - `char` ~ `'\0'`
+  - `string` ~ `""`
+
+### Conversão Implícita
+
+- Conversões entre tipos e tamanhos de dados compatíveis
+- Podem ser executadas através da simples passagem de dados
+
+```csharp
+float flutuante = 25.8F;
+int inteiro = 25;
+short curto = 25;
+
+flutuante = inteiro; // Conversão implícita
+inteiro = flutuante; // Tipo incompatível. Não funciona
+curto = inteiro; // Tamanho incompatível. Não funciona
+```
+
+---
+
+### Conversão explícita
+
+- Deve explícitar o tipo da conversão
+
+```csharp
+int inteiro = 100;
+uint semSinal = (uint)inteiro; // Conversão explícita de int para uint
+```
+
+---
+
+### Parse
+
+- Presente em todo tipo primitivo
+- Gera erro em caso de incompatibilidade
+
+```csharp
+int inteiro = int.Parse("100");
+```
+
+---
+
+### Convert
+
+- Similar ao Parse, mas permite converter entre vários tipos de valores
+
+```csharp
+int inteiro = Convert.ToInt32("100")
+```
+
+---
