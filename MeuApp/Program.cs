@@ -4,9 +4,9 @@ namespace MeuApp
 {
   class Program
   {
-    static void Main(string[] args)
+    static void Main(string[] _)
     {
-      const string text = "Hell-o, World!";
+      string text = "Hell-o, World!";
       Console.WriteLine(text);
     }
   }

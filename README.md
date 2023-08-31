@@ -220,3 +220,122 @@ dotnet run
 
 - `.csproj` ~ XML de definição do projeto
 - `Program.cs` ~ Porta de entrada da aplicação
+
+## Linguagem de Programação com C#
+
+### Escopo de um programa
+
+- Importações
+- Namespace
+- Classe
+- Método principal
+
+### Namespace
+
+- Divisões lógicas da aplicação
+- Nomes de classes são únicos dentro do namespace
+- Pode ser reutilizado entre vários arquivos e classes
+- Nomes devem ser `UpperCamelCase` e sem caracteres especiais
+- Um namespace dentro do outro, usando `.`
+  - `MeuApp.Teste`
+- Costumam acompanhar os nomes das pastas
+
+### Importações (`using`)
+
+- Bibliotecas e namespaces que o programa vai usar
+- Via de regra, feitas no topo do arquivo
+
+### Variáveis
+
+- Espaço de armazenamento de uma informação que pode variar
+- Pode ser definida com o tipo ou com a palavra reservada `var`
+- O tipo precede o nome da variável
+- Utilize nomes coesos
+- Nomes devem ser `lowerCamelCase` e sem caracteres especiais
+
+### Constantes
+
+- Espaço de armazenamento de valor que não pode ser alterado depois
+- Já deve ser instanciada com o valor
+- Nomes maiúsculos separados com `_`
+
+### Palavras Reservadas
+
+- Palavras-chave que não devem ser usadas como nomes de variáveis, constantes, classes, métodos, etc
+
+### Comentários
+
+- Uma linha `// Uma linha`
+- Multi-linhas `/* Multi-linhas */`
+- XML `/// <?xml?>`
+
+### Tipos Primitivos
+
+- built-in types
+- Tipos base que serão derivados em tipos complexos
+- Tipos de valor ~ _Value Types_
+  - Armazenam o valor e não a referência para o item na memória
+- Classificados em
+  - Tipos Simples ~ _Simple Types_
+  - Enumeradores ~ _Enums_
+  - Estruturas ~ _Structs_
+  - Tipos Nulos ~ _Nullable Types_
+- Cada tipo primitivo possui uma capacidade
+
+### System
+
+- No `.NET`, todos os tipos derivam do `System`
+
+### Byte
+
+- Usado para representar um byte de fato
+  - 8-bit ~ `0` à `255`
+- Arquivos ou streams costumam ser cadeias de bytes (byte array)
+- sbyte ~ `signed byte`
+  - Permite valores negativos
+  - 8-bit ~ `-128` à `127`
+
+### Números inteiros
+
+- short ~ `16-bit`
+  - ushort ~ `unsigned short`
+- int ~ `32-bit`
+  - uint ~ `unsigned int`
+- long ~ `64-bit`
+  - ulong ~ `unsigned long`
+
+### Números reais
+
+- float ~ Notação F
+  - 32-bit
+- double
+  - 64-bit
+- decimal ~ Notação M
+  - 128-bit
+
+---
+
+```csharp
+float salario = 2500.25F; // Notação F
+double tarifa = 125.95; // Padrão
+decimal preco = 1923.75M; // Notação M
+```
+
+---
+
+### Boolean
+
+- Armazena `True` ou `False`
+- `bool` ~ 8-bit
+
+### Char
+
+- Armazena um caractere `unicode`
+- Definido com 'aspas simples'
+- `char` ~ 16-bit
+
+### String
+
+- Cadeia / lista de caracteres
+- Definido com "aspas duplas"
+- string ~ Tamanho alocado depende do conteúdo
