@@ -457,3 +457,24 @@ int inteiro = Convert.ToInt32("100")
 - E ~ and ~ `&&`
 - OU ~ or ~ `||`
 - NEGAÇÃO ~ not ~ `!`
+
+### Heap e Stack
+
+- Divisões da memória: Heap e Stack
+- Heap armazena dados
+- Stack armazena referências para os dados
+
+### Value Types
+
+- Ao armazenar valor a memória é alocada
+- A variável acessa o dado diretamente
+- Built-in, Structs, Enums
+- `Garbage Collector` (GC) não acessa o Stack
+
+### Reference Types
+
+- Armazenam o endereço do objeto que contem os dados
+- Armazenadas no Heap
+- Várias variáveis distintas vão apontar para o mesmo objeto
+- Quando não são mais utilizados, são removidos pelo GC
+- Classes, Objects, Arrays
