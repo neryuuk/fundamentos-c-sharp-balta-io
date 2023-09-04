@@ -64,11 +64,9 @@ namespace Calculator
       Console.WriteLine("│          Divisão [4] │");
       Console.WriteLine("└──────────────────────┘");
 
-      short operacao;
       try
       {
-        operacao = short.Parse(Console.ReadLine());
-        switch (operacao)
+        switch (short.Parse(Console.ReadLine()))
         {
           case 0: Environment.Exit(0); break;
           case 1: Soma(); break;
