@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Calculator
 {
@@ -24,7 +24,7 @@ namespace Calculator
       float valor1 = LerValor("Primeiro valor:", true);
       float valor2 = LerValor("Segundo valor:");
       Console.WriteLine();
-      Console.WriteLine($"A soma entre {valor1} e {valor2} é {valor1 + valor2}");
+      Console.WriteLine($"{valor1} + {valor2} = {valor1 + valor2}");
       Console.ReadKey();
     }
 
@@ -33,7 +33,7 @@ namespace Calculator
       float valor1 = LerValor("Primeiro valor:");
       float valor2 = LerValor("Segundo valor:");
       Console.WriteLine();
-      Console.WriteLine($"A subtração entre {valor1} e {valor2} é {valor1 - valor2}");
+      Console.WriteLine($"{valor1} - {valor2} = {valor1 - valor2}");
       Console.ReadKey();
     }
   }
