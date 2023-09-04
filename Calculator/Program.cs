@@ -6,20 +6,18 @@ namespace Calculator
   {
     static void Main(string[] _)
     {
-      Divisao();
+      Multiplicacao();
     }
 
-    static float LerValor(string prompt, bool clear = false)
+    static float LerValor(string prompt)
     {
-      if (clear) Console.Clear();
-
       Console.WriteLine(prompt);
       return float.Parse(Console.ReadLine().Replace(',', '.'));
     }
 
     static void Soma()
     {
-      float valor1 = LerValor("Primeiro valor:", true);
+      float valor1 = LerValor("Primeiro valor:");
       float valor2 = LerValor("Segundo valor:");
       Console.WriteLine();
       Console.WriteLine($"{valor1} + {valor2} = {valor1 + valor2}");
@@ -41,6 +39,15 @@ namespace Calculator
       float valor2 = LerValor("Segundo valor:");
       Console.WriteLine();
       Console.WriteLine($"{valor1} / {valor2} = {valor1 / valor2}");
+      Console.ReadKey();
+    }
+
+    static void Multiplicacao()
+    {
+      float valor1 = LerValor("Primeiro valor:");
+      float valor2 = LerValor("Segundo valor:");
+      Console.WriteLine();
+      Console.WriteLine($"{valor1} * {valor2} = {valor1 * valor2}");
       Console.ReadKey();
     }
   }
