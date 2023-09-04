@@ -28,7 +28,7 @@ namespace Calculator
       Console.ReadKey();
     }
 
-    static void Subatracao()
+    static void Subtracao()
     {
       float valor1 = LerValor("Primeiro valor:");
       float valor2 = LerValor("Segundo valor:");
