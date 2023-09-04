@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace Calculator
 {
@@ -6,9 +6,7 @@ namespace Calculator
   {
     static void Main(string[] _)
     {
-      Soma();
-      Console.WriteLine();
-      Subatracao();
+      Divisao();
     }
 
     static float LerValor(string prompt, bool clear = false)
@@ -34,6 +32,15 @@ namespace Calculator
       float valor2 = LerValor("Segundo valor:");
       Console.WriteLine();
       Console.WriteLine($"{valor1} - {valor2} = {valor1 - valor2}");
+      Console.ReadKey();
+    }
+
+    static void Divisao()
+    {
+      float valor1 = LerValor("Primeiro valor:");
+      float valor2 = LerValor("Segundo valor:");
+      Console.WriteLine();
+      Console.WriteLine($"{valor1} / {valor2} = {valor1 / valor2}");
       Console.ReadKey();
     }
   }
