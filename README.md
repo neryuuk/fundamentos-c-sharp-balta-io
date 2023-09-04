@@ -478,3 +478,10 @@ int inteiro = Convert.ToInt32("100")
 - Várias variáveis distintas vão apontar para o mesmo objeto
 - Quando não são mais utilizados, são removidos pelo GC
 - Classes, Objects, Arrays
+
+### Enumeradores
+
+- Inteiro que fornece uma visualização melhor para o código
+- Usado em listas curtas
+- Usado em dados fixos
+- Sempre começa com letra `E` maiúsculo
