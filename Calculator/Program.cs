@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Calculator
 {
@@ -9,45 +11,83 @@ namespace Calculator
       while (true) Menu();
     }
 
-    static float LerValor(string prompt)
+    static List<float> LerValores()
     {
-      Console.WriteLine(prompt);
-      return float.Parse(Console.ReadLine().Replace(',', '.'));
+      List<float> valores = new List<float>();
+      bool continua = true;
+      while (continua)
+      {
+        try
+        {
+          Console.WriteLine("Digite um valor numérico e dê 'Enter'. Após inserir 2 ou mais valores, digite '=' para calcular.");
+          string input = Console.ReadLine().Trim().Replace(',', '.');
+          if (input == "=") continua = false;
+          else valores.Add(float.Parse(input));
+        }
+        catch
+        {
+          Console.WriteLine("Valor inválido.");
+        }
+      }
+
+      if (valores.Count < 2) throw new Exception();
+      return valores;
     }
 
     static void Soma()
     {
-      float valor1 = LerValor("Primeiro valor:");
-      float valor2 = LerValor("Segundo valor:");
+      List<float> valores = LerValores();
       Console.WriteLine();
-      Console.WriteLine($"{valor1} + {valor2} = {valor1 + valor2}");
+
+      Console.WriteLine($"{string.Join(" + ", valores)} = {valores.Sum()}");
       Console.ReadKey();
     }
 
     static void Subtracao()
     {
-      float valor1 = LerValor("Primeiro valor:");
-      float valor2 = LerValor("Segundo valor:");
+      List<float> valores = LerValores();
       Console.WriteLine();
-      Console.WriteLine($"{valor1} - {valor2} = {valor1 - valor2}");
+
+      float resultado = valores[0];
+
+      for (int i = 1; i < valores.Count; i++)
+      {
+        resultado -= valores[i];
+      }
+
+      Console.WriteLine($"{string.Join(" - ", valores)} = {resultado}");
       Console.ReadKey();
     }
 
     static void Multiplicacao()
     {
-      float valor1 = LerValor("Primeiro valor:");
-      float valor2 = LerValor("Segundo valor:");
+      List<float> valores = LerValores();
       Console.WriteLine();
-      Console.WriteLine($"{valor1} * {valor2} = {valor1 * valor2}");
+
+      float resultado = valores[0];
+
+      for (int i = 1; i < valores.Count; i++)
+      {
+        resultado *= valores[i];
+      }
+
+      Console.WriteLine($"{string.Join(" * ", valores)} = {resultado}");
       Console.ReadKey();
     }
 
     static void Divisao()
     {
-      float valor1 = LerValor("Primeiro valor:");
-      float valor2 = LerValor("Segundo valor:");
+      List<float> valores = LerValores();
       Console.WriteLine();
-      Console.WriteLine($"{valor1} / {valor2} = {valor1 / valor2}");
+
+      float resultado = valores[0];
+
+      for (int i = 1; i < valores.Count; i++)
+      {
+        resultado /= valores[i];
+      }
+
+      Console.WriteLine($"{string.Join(" / ", valores)} = {resultado}");
       Console.ReadKey();
     }
 
