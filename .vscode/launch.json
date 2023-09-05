@@ -11,7 +11,7 @@
       "preLaunchTask": "build",
       "program": "${workspaceFolder}/Calculator/bin/Debug/netcoreapp3.1/Calculator.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/Calculator",
+      "cwd": "${workspaceFolder}",
       "console": "internalConsole",
       "stopAtEntry": false
     },
