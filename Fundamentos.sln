@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Calculator.csproj", "{B1FC020D-BFDB-4B91-909E-5AF1E5F3D855}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stopwatch", "Stopwatch\Stopwatch.csproj", "{A95599EA-FDFF-4835-A97C-4197DFA7D786}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B1FC020D-BFDB-4B91-909E-5AF1E5F3D855}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1FC020D-BFDB-4B91-909E-5AF1E5F3D855}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1FC020D-BFDB-4B91-909E-5AF1E5F3D855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A95599EA-FDFF-4835-A97C-4197DFA7D786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A95599EA-FDFF-4835-A97C-4197DFA7D786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A95599EA-FDFF-4835-A97C-4197DFA7D786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A95599EA-FDFF-4835-A97C-4197DFA7D786}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
