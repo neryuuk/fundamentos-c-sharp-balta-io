@@ -5,14 +5,25 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": ".NET Core",
+      "name": "Calculator",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
       "program": "${workspaceFolder}/Calculator/bin/Debug/netcoreapp3.1/Calculator.dll",
       "args": [],
       "cwd": "${workspaceFolder}",
-      "console": "internalConsole",
+      "console": "externalTerminal",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Stopwatch",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/Stopwatch/bin/Debug/netcoreapp3.1/Stopwatch.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "externalTerminal",
       "stopAtEntry": false
     },
     {
