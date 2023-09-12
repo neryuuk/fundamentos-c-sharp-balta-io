@@ -48,14 +48,12 @@ namespace Stopwatch
         string input = Console.ReadLine().Trim().ToUpper();
 
         if (input == "0") Environment.Exit(0);
-        Regex regex = new Regex(@"^([0-9]+)([S|M])$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
+        Regex regex = new Regex(@"^([0-9]+)([S|M])$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         if (!regex.IsMatch(input)) throw new Exception();
 
-        Start(
-          int.Parse(regex.Matches(input)[0].Groups[1].Value),
-          char.Parse(regex.Matches(input)[0].Groups[2].Value)
-        );
+        GroupCollection groups = regex.Matches(input)[0].Groups;
+        Start(int.Parse(groups[1].Value), char.Parse(groups[2].Value));
       }
       catch
       {
